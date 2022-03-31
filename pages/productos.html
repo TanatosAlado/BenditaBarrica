@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Productos</title>
+</head>
+<body id="body" onload="cargarUsuario(), listarVinos()" class="bodyProductos">
+
+
+<header>
+    <nav class="navbar navbar-expand-md navbar-light navFlex fondoNav">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand margen" href="#">
+                <!-- <img class="logo" id="top" src="../assets/logoPrincipal-modified.png" alt="logo"> -->
+            </a>
+            <div class=" container navFlex collapse navbar-collapse" id="navbarSupportedContent">
+                <ul id="menu" class="navbar-nav">
+                    <li>
+                        <P>Usuario Actual:</P>
+                    </li>
+                    <li> 
+                        <p id="usuarioLogueado">Invitado</p>
+                    </li>
+                    <li>
+                        <p id="inOut" onclick="inOutCliente()"><strong>Iniciar Sesion</strong></p> 
+                    </li>
+                    <li class="nav-item navFlex__item1">
+                        <a href="../index.html"><strong><span>Inicio</span></strong></a></li>
+                    <li class="nav-item navFlex__item2">
+                        <a href="productos.html"><strong>Productos</strong></a></li>
+                    <li class="nav-item navFlex__item3">
+                        <a href="experiencias.html"><strong>Experiencias</strong></a></li>
+                    <li class="nav-item navFlex__item5 figuraCarro">
+                        <img class="elCarritoLleno" id="elCarrito" onclick="verCarro()" src="../assets/carritoLleno.png">
+                        <span id="prodCarrito" class="cantCarrito">0</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header> 
+
+<div id="cerrarCarro">
+    <div class="sidebar cony">
+        <div class="row formatoCarro">
+            <h5 class="col-sm-2 col-md-3 col-lg-2 col-xl-2">Etiqueta</h5>
+            <h5 class="col-sm-2 col-md-2 col-lg-2 col-xl-2">Nombre</h5>
+            <h5 class="col-sm-2 col-md-2 col-lg-2 col-xl-2">Precio</h5>
+            <h5 class="col-sm-2 col-md-1 col-lg-2 col-xl-2">Cantidad</h5>
+            <h5 class="col-sm-2 col-md-2 col-lg-2 col-xl-2">SubTotal</h5>
+            <!-- <h5 class="col-sm-2 col-md-2 col-lg-2 col-xl-2">X</h5> -->
+            <section id="cuerpoCarrito">
+
+            </section>
+        </div>
+    </div>
+</div>
+
+<div id=bodySinCarro class="bodySinCarro">
+
+
+    <div class="container portada">
+        <img src="../assets/b3.png" alt="">
+    </div>
+
+
+     
+    <div id="login">
+
+    </div>
+   
+
+
+    <h1 class="titulo">Estos son nuestros vinos</h1>
+    <h5 class="titulo">(Si tenes miedo de tentarte con todos, aplica los filtros)</h5>
+
+    <section id="filtros" class="filtro">
+
+        <div class="row justify-content-center mt-4">
+            <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8 border tituloFiltro">
+                <p><strong>Cepas</strong></p>
+            </div>
+        </div>
+        <div class="row justify-content-center alineacion">
+            <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1 border">
+                <input type="checkbox" id="check1" name="Malbec" value="cepas"><p>Malbec</p>
+            </div>
+            <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1 border">
+                <input type="checkbox" id="check2" name="Cabernet Sauvignon" value="cepas"><p>Cabernet Sauvignon</p>
+            </div>
+            <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1 border">
+                <input type="checkbox" id="check3" name="Cabernet Franc" value="cepas"><p>Cabernet Franc</p>
+            </div>
+            <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1 border">
+                <input type="checkbox" id="check4" name="Blend" value="cepas"><p>Blend</p>
+            </div>
+            <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1 border">
+                <input type="checkbox" id="check5" name="Merlot" value="cepas"><p>Merlot</p>
+            </div>
+            <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1 border">
+                <input type="checkbox" id="check6" name="Syrah" value="cepas"><p>Syrah</p>
+            </div>
+            <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1 border">
+                <input type="checkbox" id="check7" name="Pinot Noir" value="cepas"><p>Pinot Noir</p>
+            </div>
+            <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1 border">
+                <input type="checkbox" id="check8" name="Petit Verdot" value="cepas"><p>Petit Verdot</p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 border tituloFiltro mt-2">
+                <p><strong>Origen</strong></p>
+            </div>
+        </div>
+        <div class="row justify-content-center alineacion">
+            <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1 border">
+                <input type="checkbox" id="check9" name="Mendoza" value="origen"><p>Mendoza</p>
+            </div>
+            <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1 border">
+                <input type="checkbox" id="check10" name="Salta" value="origen"><p>Salta</p>
+            </div>
+            <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1 border">
+                <input type="checkbox" id="check11" name="La Rioja" value="origen"><p>La Rioja</p>
+            </div>
+            <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1 border">
+                <input type="checkbox" id="check12" name="Neuquen" value="origen"><p>Neuquen</p>
+            </div>
+        </div>
+        <button id="crearFiltro" onclick="realizarFiltros()" class="botonFiltro mt-2 mb-1">Aplicar filtros</button>
+        <button id="mostrarTodos" onclick="quitarFiltros()" class="botonFiltro mt-2 mb-4">Mostrar todos</button>
+    </section>
+
+
+    <div id="tablaVinos" class="losvinos">
+
+    </div>
+
+    <div id="propuesta" >
+
+    </div>
+</div>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="../js/scripts.js"></script>
+</body>
+</html>

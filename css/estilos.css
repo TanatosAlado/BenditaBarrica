@@ -1,0 +1,460 @@
+*{
+    margin:0;
+    padding:0; 
+}
+
+.eleccion{ 
+    width: 40%;
+    margin-left: 30%;
+    margin-bottom: 50px;
+    background-color: rgb(118, 135, 152,0.5);
+    color: white;
+}
+
+.eleccion p{
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+}
+
+.eleccion button{
+    width: 40%;
+    margin-left: 5%;
+}
+
+.tamano{
+    width: 80%;
+} 
+
+.fila{
+    display: flex;
+    flex-direction: row;
+}
+
+.botonCrear{
+    width: 50%;
+    /* margin-left: 25%; */
+    margin-top: 5px;
+}
+
+.alinear{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.body{
+    /*background-image: url('../assets/espacioKilka.jpg');*/ 
+    background-color: brown;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-color: lightslategray;*/
+}
+
+.estiloBarrica img{
+    width: 200px;
+    height: 300px;
+    margin-left: 20%;
+}
+
+.estiloBarrica h1{
+    text-align: center;
+    font-size: 5rem;
+    color: black;
+}
+
+.estiloBarrica p{
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.margenAlto{
+    background-color: lightgray;
+}
+
+.navFlex {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    justify-content: flex-end;
+}
+
+.navFlex li {
+    list-style-type: none;
+    padding: 15px;
+    font-size: 1rem;
+    color: white;
+}
+
+.navFlex li a {
+    text-decoration: none;
+    color: black;
+}
+
+.navFlex li a:hover {
+    text-shadow: 2px 2px 3px #808000;
+}
+
+.fondoNav {
+    background-color: brown;
+    width: 100%;
+}
+
+.vinos img{
+    width: 90%;
+    margin-left: 5%;
+}
+
+.experiencias img{
+    width: 90%;
+    margin-left: 5%;
+}
+
+.tamano{
+    width: 120px;
+    height: 300px;
+}
+
+.tamano img{
+    width: 100%;
+    height: 100%;
+}
+
+.tamano2{
+    width: 200px;
+    height: 300px;
+    text-align: center;
+}
+
+.orden{
+    display: flex;
+    flex-direction:row;
+    margin-bottom: 5px;
+    margin-left: 5px; 
+}
+
+.ordenyprogreso{
+    position: relative;
+    display: inline-block; 
+    justify-content: center;
+} 
+
+.bodyProductos{
+    background-color: brown;
+}
+
+.titulo{
+    color: white;
+    text-align: center;
+    /* margin-bottom: 50px; */
+}
+
+.botonMedida{
+    width: 25px;
+    height: auto;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.filtro{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.filtro p{
+    text-align: center;
+}
+
+.arana{
+    display: flex;
+    flex-direction: row;
+}
+
+.items li{
+    list-style: none;
+    padding: 0px;
+}
+
+.item ul{
+    padding: 0px;
+}
+
+.item label{
+    padding: 0px;
+}
+
+.cepas{
+    /* background-image: url(../assets/uvasFondo2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; */
+    background-color: burlywood;
+}
+
+.origenes{
+    /* background-image: url(../assets/politico.png);
+    background-size: cover;
+    background-repeat: no-repeat; */
+    background-color: burlywood;
+}
+
+.portada img{
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 50px;
+}
+
+.estiloTienda h3, p{
+    text-align: center;
+}
+
+.estiloTienda{
+    align-self: center;
+    margin-left: 5%;
+    color: white;
+}
+
+
+/*Inicio toqueteo carrito*/
+.sidebar{
+    position: absolute;
+    background: linear-gradient(270deg, #12a3b6 0%, #8ddf6d 37.25%, #941d8e 100%);
+    width: 80%;
+    visibility: hidden;
+    left: 10%;
+    z-index: 1;
+}
+
+.fondocarro{
+    position: absolute;
+    background: red;
+    width: 100%;
+    height: 950px;
+    visibility: hidden;
+    z-index: 2;
+}
+
+.btn-carrito{
+    border: none;
+    background-image: url(../assets/carritoLleno.png);
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Hubballi', cursive;
+} 
+
+.btn-carrito img{
+    width: 50px;
+    height: 50px;
+}
+
+.active{
+    visibility: visible;
+}
+
+
+.formatoCarro li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+.formatoCarro ul{
+    justify-content: space-around;
+}
+
+.tamanio img{
+    width: 60px;
+    height: 150px;
+}
+
+.formatoCarro{
+    text-align: center;
+} 
+
+.row{
+    align-items: center;
+}
+
+.figuraCarro img{
+    width: 50px;
+    height: 50px;
+
+} 
+
+
+.fondoCarro{
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    z-index: 1;
+}
+
+.pie-pagina{
+    width: 100%;
+    height: 300px;
+    background-color: lightblue;
+}
+
+/*Fin toqueteo carrito*/
+
+/* Inicio Login */
+
+.botonRegistro{
+    align-content: center;
+}
+
+.formularioLogin{
+    height: 150px;
+    text-align: center;
+    color: white;
+}
+
+.formularioRegistro{
+    text-align: center;
+    color: white;
+}
+
+
+
+.formularioLogin button, input{
+    width: 60%;
+}
+
+.login{
+    color: white;
+}
+
+.botonRegistro{
+    width: 50%;
+    margin-left: 25%;
+}
+
+.parte1y3{
+    height: 300px;
+    background-image: url(../assets/barrica.png);
+    background-repeat: no-repeat;
+    background-size:contain ;
+    justify-items: center;
+}
+
+.barricaIzq{
+    background-position: right;
+}
+
+
+/* Inicio sub item registro*/ 
+#menu>li>ul{
+    display: none;
+  }
+  #menu>li:hover>ul {
+    display:block;
+  }
+
+
+.tipito img{
+    width: 50px;
+    height: 25px;
+}
+/* Fin sub item registro */
+
+.cantCarritoInicio{
+    opacity: 0;
+}
+
+
+/* Inicio toqueteo mayos 18*/ 
+.apagar{
+    opacity:.1;
+    }
+
+.emergente{
+    width:400px;
+    height:250px;
+    position:fixed;
+    background-color:#FFFAFA;
+    top:50%;
+    left:50%;
+    margin-left:-200px;
+    margin-top:-100px;
+    border:1px solid #000;
+    border-radius:10px;
+    padding:20px;
+    text-align:center;
+    box-shadow: 10px 10px 10px #ccc;
+    z-index: 1;
+    opacity: 1;
+}
+
+.emergente p{
+    font-size:24px;
+}
+
+.boton{
+    font-size:18px;
+    padding:10px;
+    border:1px solid #000;
+    border-radius:5px;
+    display:inline-block;
+    width:150px;
+    margin-top:32px;
+    box-shadow:5px 5px 5px #ccc;
+}
+
+.menor:hover{
+    background-color: red;
+}
+
+.mayor:hover{
+    background-color: green;
+}  
+/* Fin toqueteo mayos 18*/ 
+
+.losvinos{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+
+.bloqueo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.bloqueo p{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.bloqueo img{
+    width: 500px;
+    height: auto;
+}
+
+.bloqueo button{
+    width: 40%;
+    margin-top: 10px;
+}
+
+.alineacion{
+    display: flex;
+    align-items: stretch;
+    color: white;
+}
+
+.botonFiltro{
+    width: 20%;
+    margin-left: 40%;
+}
+
+.tituloFiltro{
+    color: white;
+}
+
+.body{
+    z-index: 2;
+}
