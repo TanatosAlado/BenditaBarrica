@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/estilos.css">
     <title>Experiencias</title>
 </head>
-<body>
+<body class="body">
     <header>
         <nav id="navBar" class="navbar navbar-expand-md navbar-light navFlex fondoNav">
             <div class="container-fluid">
@@ -28,15 +28,19 @@
                         <li>
                             <p id="inOut" onclick="inOutCliente()"><strong>Iniciar Sesion</strong></p> 
                         </li>
-                        <!-- <li class="nav-item navFlex__item1">
-                            <a href="index.html"><strong><span>Inicio</span></strong></a></li> -->
+                        <li>
+                        </li>
+                        <li>
+                            <p>-</p>
+                        </li>
+                        <li>
+                        </li>
+                        <li class="nav-item navFlex__item1">
+                            <a href="../index.html"><strong><span>Inicio</span></strong></a></li>
                         <li class="nav-item navFlex__item2">
-                            <a href="pages/productos.html"><strong>Productos</strong></a></li>
+                            <a href="productos.html"><strong>Tienda</strong></a></li>
                             <li class="nav-item navFlex__item5 figuraCarro">
-
-                                <!-- <img class="elCarritoLleno" id="elCarrito" onclick="verCarro()" src="assets/carritoLleno.png"> -->
                                 <span id="prodCarrito" class="cantCarritoInicio">0</span> 
-        
                             </li> 
                     </ul>
                 </div>
@@ -44,6 +48,113 @@
         </nav>
     </header>
     
+    <div class="container portada">
+        <img src="../assets/b3.png" alt="">
+    </div>
+
+    <div id="login">
+
+    </div>
+
+
+
+    <div class="container textosExperiencia">
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <h2>Catas con Maridajes</h2>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 maridaje">
+                <img src="../assets/maridaje2.jpg" alt="maridaje">
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 maridaje">
+                <img src="../assets/maridaje1.jpg" alt="maridaje">
+            </div>
+            <div class="col-sm-10 col-md-10 col-lg-10 col-xl-10">
+                <p>Que son las Catas con Maridaje? El Maridaje es la búsqueda de la armonía, equilibrio y contrastes de aroma y sabor entre platos y vinos. El mundo del maridaje es complejo y avanza hacia la experimentación y la amplitud de combinación.</p>
+                <p>Te interesa conocer un poco más? Te invitamos a suscribirte a nuestro NewsLetter</p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-5">
+                <h2>Catas a Ciegas</h2>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 maridaje">
+                <img src="../assets/cataciegas1.jpg" alt="ciegas">
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 maridaje">
+                <img src="../assets/cataciegas2.jpg" alt="ciegas">
+            </div>
+            <div class="col-sm-10 col-md-10 col-lg-10 col-xl-10">
+                <p>En que consiste una Cata a Ciegas? La Cata a Ciegas consiste en el análisis sensorial de vinos cuya procedencia, marca e incluso añada se desconocen, para que el profesional o aficionado no se deje influenciar por la popularidad de un determinado vino. </p>
+                <p>No te pierdas la próxima!! Suscribete..</p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-5">
+                <h2>Feria de Vinos</h2>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 maridaje">
+                <img src="../assets/feria1.jpg" alt="feria">
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 maridaje">
+                <img src="../assets/feria2.jpg" alt="feria">
+            </div>
+            <div class="col-sm-10 col-md-10 col-lg-10 col-xl-10">
+            <p>La feria Vinos & Bodegas es un evento social cuyo objetivo es que los consumidores puedan apreciar los distintos vinos que estarán presentes, disfrutando de sus catacterísticas, aromas y sabores, junto a la oferta gastronómica que habrá en el sector de food trucks</p>
+            <p>Bendita Barrica participa de las Ferias de Vinos más grandes de la Región.</p>
+            <p>Queres recibir info y conseguir algún descuento en entradas? Suscribite.</p>
+            </div>
+        </div>
+    </div>  
+
+        <div class="suscripcion mt-5">
+            <div class="row justify-content-center">
+                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 bg-info">
+                    <h5>Ingresá tu mail para recibir nuestro NewsLetter</h5>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div id="suscripcionMail" class="col-sm-6 col-md-6 col-lg-6 col-xl-6 bg-info">
+                    <input type="email">
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 bg-info">
+                    <button onclick="suscribir()">Suscribeme</button>
+                </div>
+            </div>
+        </div>
+
+
+<footer id="footer" class="pie-pagina mt-5">
+    <div class="grupo-1">
+        <div class="box integral">
+            <figure>
+                <div class="traslado">
+                    <a href="#top"><img src="../assets/b3.png" alt="mg"></a>
+                </div>
+            </figure>
+        </div>
+        <div class="box nosotros">
+            <h2>SOBRE NOSOTROS</h2>
+            <p>San Martin 1254, Santa Fe, Santa Fe </p>
+            <p>--> Punto de Retiro <--</p>
+            <p>Teléfono Central: (342) 5289170</p>
+        </div>
+        <div class="box redes">
+            <h2>Siguenos</h2>
+            <div class="red-social">
+                <a href="#"><img src="../assets/face.svg"></a>
+                <a href="#"><img src="../assets/insta.svg"></a>
+                <a href="https://api.whatsapp.com/send?phone=+5493425289170/"><img width="100%" src="../assets/ws.svg"></a>
+            </div>   
+        </div>
+    </div>
+    <div class="grupo-2">
+        <small>&copy; 2022 <b>Integral Soluciones informáticas</b> - Todos los derechos reservados</small>
+    </div>
+</footer>
+
     <script src="../js/scripts.js"></script>
 </body>
 </html>

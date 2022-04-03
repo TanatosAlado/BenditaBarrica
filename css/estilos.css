@@ -3,6 +3,12 @@
     padding:0; 
 }
 
+body,
+    html {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
 .eleccion{ 
     width: 40%;
     margin-left: 30%;
@@ -33,7 +39,6 @@
 
 .botonCrear{
     width: 50%;
-    /* margin-left: 25%; */
     margin-top: 5px;
 }
 
@@ -50,24 +55,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     /*background-color: lightslategray;*/
-}
-
-.estiloBarrica img{
-    width: 200px;
-    height: 300px;
-    margin-left: 20%;
-}
-
-.estiloBarrica h1{
-    text-align: center;
-    font-size: 5rem;
-    color: black;
-}
-
-.estiloBarrica p{
-    color: black;
-    text-align: center;
-    font-size: 2rem;
 }
 
 .margenAlto{
@@ -90,11 +77,15 @@
 
 .navFlex li a {
     text-decoration: none;
-    color: black;
+    color: white
+}
+
+.navFlex li p{
+    justify-content: center;
 }
 
 .navFlex li a:hover {
-    text-shadow: 2px 2px 3px #808000;
+    text-shadow: 2px 2px 3px black;
 }
 
 .fondoNav {
@@ -133,6 +124,10 @@
     flex-direction:row;
     margin-bottom: 5px;
     margin-left: 5px; 
+}
+
+.orden input{
+    pointer-events: none;
 }
 
 .ordenyprogreso{
@@ -187,16 +182,10 @@
 }
 
 .cepas{
-    /* background-image: url(../assets/uvasFondo2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat; */
     background-color: burlywood;
 }
 
 .origenes{
-    /* background-image: url(../assets/politico.png);
-    background-size: cover;
-    background-repeat: no-repeat; */
     background-color: burlywood;
 }
 
@@ -220,7 +209,7 @@
 /*Inicio toqueteo carrito*/
 .sidebar{
     position: absolute;
-    background: linear-gradient(270deg, #12a3b6 0%, #8ddf6d 37.25%, #941d8e 100%);
+    background-color:darkgrey;
     width: 80%;
     visibility: hidden;
     left: 10%;
@@ -276,6 +265,7 @@
 
 .row{
     align-items: center;
+    --bs-gutter-x: 0;
 }
 
 .figuraCarro img{
@@ -458,3 +448,114 @@
 .body{
     z-index: 2;
 }
+
+.cierre{
+    text-align: right;
+    align-content: flex-end;
+}
+
+.traslado img:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+.pie-pagina {
+    width: 100%;
+    background-color: rgba(168, 207, 69, 0.5);
+}
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img {
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2 {
+    color: black;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p {
+    color: black;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .nosotros{
+    text-align: center;
+}
+
+.pie-pagina .grupo-1 .redes{
+    text-align: center;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-2 {
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small {
+    font-size: 15px;
+}
+.pie-pagina .grupo-2 .margenInferior img {
+    margin-bottom: 30px;
+}
+
+.calzar img {
+    width: 80%;
+    margin-left: 10%;
+    padding-top: 20px;
+}
+
+.botonesCarrito{
+    width: 60%;
+    margin-bottom: 10px;
+}
+
+.maridaje img{
+    width: 90%;
+    margin-left: 5%;
+}
+
+.textosExperiencia h2, p{
+    text-align: center;
+    color: white;
+}
+
+.suscripcion{
+    text-align: center;
+    color: white;
+}
+
+.suscripcion input{
+    width: 50%;
+}
+
+.suscripcion button{
+    width: 35%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+

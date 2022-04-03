@@ -32,10 +32,17 @@
                             <li>
                                 <p id="inOut" onclick="inOutCliente()"><strong>Iniciar Sesion</strong></p> 
                             </li>
-                            <!-- <li class="nav-item navFlex__item1">
-                                <a href="index.html"><strong><span>Inicio</span></strong></a></li> -->
+                            <li>
+                            </li>
+                            <li>
+                                <p>-</p>
+                            </li>
+                            <li>
+                            </li>
                             <li class="nav-item navFlex__item2">
-                                <a href="pages/productos.html"><strong>Productos</strong></a></li>
+                                <a href="pages/productos.html"><strong>Tienda</strong></a></li>
+                                <li class="nav-item navFlex__item3">
+                                    <a href="pages/experiencias.html"><strong>Experiencias</strong></a></li>
                                 <li class="nav-item navFlex__item5 figuraCarro">
     
                                     <!-- <img class="elCarritoLleno" id="elCarrito" onclick="verCarro()" src="assets/carritoLleno.png"> -->
@@ -60,19 +67,45 @@
             <div class="col-sm-6 col-md-6 col-lg-6 vinos">
                 <h3>Tienda de Vinos</h3>
                 <p><span onclick="ingresoCliente()">Inicia sesion</span> para acceder a beneficios o continua como Invitado</p>
-                <img src="assets/vinos.jpg" alt="">
+                <a title="tiendaVinos" href="pages/productos.html"><img src="assets/vinos.jpg" alt="vinos" /></a>
+                <!-- <img src="assets/vinos.jpg" alt=""> -->
             </div>
             <div class="col-sm-6 col-md-6 col-lg-6 experiencias">
                 <h3>Experiencias</h3>
-                <p>Recorre las experiencias bla bla..</p>
-                <img src="assets/experiencias.jpg" alt="">
+                <p>Recorre las experiencias que están llegando a Bendita Barrica..</p>
+                <a title="experiencias" href="pages/experiencias.html"><img src="assets/experiencias.jpg" alt="vinos" /></a>
             </div>
         </div>
     
         <div id="altaUsuario" class="apgar"></div>
     
-        <footer id="footer" class="footer pie-pagina mt-5">
-
+        <footer id="footer" class="pie-pagina mt-5">
+                <div class="grupo-1">
+                    <div class="box integral">
+                        <figure>
+                            <div class="traslado">
+                                <a href="#top"><img src="assets/b3.png" alt="mg"></a>
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="box nosotros">
+                        <h2>Sobre Nosotros</h2>
+                        <p>San Martin 1254, Santa Fe, Santa Fe </p>
+                        <p>--> Punto de Retiro <--</p>
+                        <p>Teléfono Central: (342) 5289170</p>
+                    </div>
+                    <div class="box redes">
+                        <h2>Siguenos</h2>
+                        <div class="red-social">
+                            <a href="#"><img src="assets/face.svg"></a>
+                            <a href="#"><img src="assets/insta.svg"></a>
+                            <a href="https://api.whatsapp.com/send?phone=+5493425289170/"><img width="100%" src="assets/ws.svg"></a>
+                        </div>   
+                    </div>
+                </div>
+                <div class="grupo-2">
+                    <small>&copy; 2022 <b>Integral Soluciones informáticas</b> - Todos los derechos reservados</small>
+                </div>
         </footer>
     </div>
 
@@ -86,7 +119,8 @@
     
     <!-- Fin toqueteo mayor 18-->
 
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>

@@ -27,7 +27,7 @@ let nuestrosVinos = [{
     cepa: "Malbec",
     origen: "Mendoza",
     precio: 2100,
-    foto: '../assets/dvcatena.jpg',
+    foto: '../assets/dvcatena.png',
     unidades: 0
 },
 {
@@ -35,7 +35,7 @@ let nuestrosVinos = [{
     cepa: "Cabernet Franc",
     origen: "Mendoza",
     precio: 1620,
-    foto: '../assets/carmelopatticf.jpg',
+    foto: '../assets/carmelopatticf.png',
     unidades: 0
 },
 {
@@ -43,7 +43,7 @@ let nuestrosVinos = [{
     cepa: "Malbec",
     origen: "Salta",
     precio: 1600,
-    foto: '../assets/amalaya.jpg',
+    foto: '../assets/amalaya.png',
     unidades: 0
 },
 {
@@ -51,7 +51,7 @@ let nuestrosVinos = [{
     cepa: "Blend",
     origen: "Mendoza",
     precio: 3150,
-    foto: '../assets/lucabesodedante.jpg',
+    foto: '../assets/lucabesodedante.png',
     unidades: 0
 },
 {
@@ -59,7 +59,7 @@ let nuestrosVinos = [{
     cepa: "Malbec",
     origen: "Mendoza",
     precio: 1700,
-    foto: '../assets/saintfelicien.jpg',
+    foto: '../assets/saintfelicien.png',
     unidades: 0
 },
 {
@@ -67,7 +67,7 @@ let nuestrosVinos = [{
     cepa: "Syrah",
     origen: "Mendoza",
     precio: 1260,
-    foto: '../assets/trumpeter.jpg',
+    foto: '../assets/trumpeter.png',
     unidades: 0
 },
 {
@@ -75,7 +75,7 @@ let nuestrosVinos = [{
     cepa: "Malbec",
     origen: "Mendoza",
     precio: 1900,
-    foto: '../assets/obraprima.jpg',
+    foto: '../assets/obraprima.png',
     unidades: 0
 },
 {
@@ -83,7 +83,7 @@ let nuestrosVinos = [{
     cepa: "Merlot",
     origen: "Mendoza",
     precio: 5200,
-    foto: '../assets/riccitelli.jpg',
+    foto: '../assets/riccitelli.png',
     unidades: 0
 },
 {
@@ -91,7 +91,7 @@ let nuestrosVinos = [{
     cepa: "Malbec",
     origen: "Mendoza",
     precio: 4950,
-    foto: '../assets/siesta.jpg',
+    foto: '../assets/siesta.png',
     unidades: 0
 },
 {
@@ -99,7 +99,7 @@ let nuestrosVinos = [{
     cepa: "Malbec",
     origen: "Mendoza",
     precio: 1650,
-    foto: '../assets/numina.jpg',
+    foto: '../assets/numina.png',
     unidades: 0
 },
 {
@@ -107,7 +107,7 @@ let nuestrosVinos = [{
     cepa: "Cabernet Sauvignon",
     origen: "Mendoza",
     precio: 1150,
-    foto: '../assets/lasperdicescs.jpg',
+    foto: '../assets/lasperdicescs.png',
     unidades: 0
 },
 {
@@ -115,7 +115,7 @@ let nuestrosVinos = [{
     cepa: "Malbec",
     origen: "Mendoza",
     precio: 950,
-    foto: '../assets/nicasia.jpg',
+    foto: '../assets/nicasia.png',
     unidades: 0
 },
 {
@@ -123,7 +123,7 @@ let nuestrosVinos = [{
     cepa: "Malbec",
     origen: "Mendoza",
     precio: 825,
-    foto: '../assets/fabremontmayou.jpg',
+    foto: '../assets/fabremontmayou.png',
     unidades: 0
 },
 {
@@ -131,7 +131,7 @@ let nuestrosVinos = [{
     cepa: "Blend",
     origen: "Mendoza",
     precio: 1275,
-    foto: '../assets/pispi.jpg',
+    foto: '../assets/pispi.png',
     unidades: 0
 },
 {
@@ -139,7 +139,7 @@ let nuestrosVinos = [{
     cepa: "Malbec",
     origen: "La Rioja",
     precio: 850,
-    foto: '../assets/raza.jpg',
+    foto: '../assets/raza.png',
     unidades: 0
 },
 {
@@ -147,7 +147,7 @@ let nuestrosVinos = [{
     cepa: "Merlot",
     origen: "Mendoza",
     precio: 750,
-    foto: '../assets/navarrocorreas.jpg',
+    foto: '../assets/navarrocorreas.png',
     unidades: 0
 },
 {
@@ -155,7 +155,7 @@ let nuestrosVinos = [{
     cepa: "Pinot Noir",
     origen: "Neuquen",
     precio: 850,
-    foto: '../assets/saurus.jpg',
+    foto: '../assets/saurus.png',
     unidades: 0
 },
 {
@@ -163,7 +163,7 @@ let nuestrosVinos = [{
     cepa: "Pinot Noir",
     origen: "Mendoza",
     precio: 1170,
-    foto: '../assets/carminegranata.jpg',
+    foto: '../assets/carminegranata.png',
     unidades: 0
 },
 {
@@ -171,7 +171,7 @@ let nuestrosVinos = [{
     cepa: "Petit Verdot",
     origen: "Mendoza",
     precio: 990,
-    foto: '../assets/tucumen.jpg',
+    foto: '../assets/tucumen.png',
     unidades: 0
 },
 {
@@ -179,7 +179,7 @@ let nuestrosVinos = [{
     cepa: "Blend",
     origen: "Mendoza",
     precio: 4410,
-    foto: '../assets/casaboher.jpg',
+    foto: '../assets/casaboher.png',
     unidades: 0
 },
 {
@@ -187,7 +187,7 @@ let nuestrosVinos = [{
     cepa: "Malbec",
     origen: "Mendoza",
     precio: 1305,
-    foto: '../assets/zuccardi.jpg',
+    foto: '../assets/zuccardi.png',
     unidades: 0
 },
 {
@@ -195,7 +195,7 @@ let nuestrosVinos = [{
     cepa: "Malbec",
     origen: "Mendoza",
     precio: 700,
-    foto: '../assets/alambrado.jpg',
+    foto: '../assets/alambrado.png',
     unidades: 0
 },
 {
@@ -203,15 +203,15 @@ let nuestrosVinos = [{
     cepa: "Syrah",
     origen: "Mendoza",
     precio: 3880,
-    foto: '../assets/pequenas.jpg',
+    foto: '../assets/pequenas.png',
     unidades: 0
 },
 {
-    nombre: "DOM",
+    nombre: "DON",
     cepa: "Malbec",
     origen: "Mendoza",
     precio: 6350,
-    foto: '../assets/dom.jpg',
+    foto: '../assets/don.png',
     unidades: 0
 },
 {
@@ -219,7 +219,7 @@ let nuestrosVinos = [{
     cepa: "Petit Verdot",
     origen: "Salta",
     precio: 2450,
-    foto: '../assets/domingomolina.jpg',
+    foto: '../assets/domingomolina.png',
     unidades: 0
 },
 {
@@ -227,7 +227,7 @@ let nuestrosVinos = [{
     cepa: "Malbec",
     origen: "Mendoza",
     precio: 950,
-    foto: '../assets/leo.jpg',
+    foto: '../assets/leo.png',
     unidades: 0
 },
 {
@@ -235,7 +235,7 @@ let nuestrosVinos = [{
     cepa: "Petit Verdot",
     origen: "Mendoza",
     precio: 1450,
-    foto: '../assets/alacolorada.jpg',
+    foto: '../assets/alacolorada.png',
     unidades: 0
 },
 {
@@ -243,7 +243,7 @@ let nuestrosVinos = [{
     cepa: "Malbec",
     origen: "Salta",
     precio: 1300,
-    foto: '../assets/piattelli.jpg',
+    foto: '../assets/piattelli.png',
     unidades: 0
 },
 {
@@ -251,7 +251,7 @@ let nuestrosVinos = [{
     cepa: "Blend",
     origen: "Mendoza",
     precio: 5200,
-    foto: '../assets/trinita.jpg',
+    foto: '../assets/trinita.png',
     unidades: 0
 },
 {
@@ -259,7 +259,7 @@ let nuestrosVinos = [{
     cepa: "Malbec",
     origen: "Mendoza",
     precio: 3025,
-    foto: '../assets/laur.jpg',
+    foto: '../assets/laur.png',
     unidades: 0
 },
 {
@@ -267,7 +267,7 @@ let nuestrosVinos = [{
     cepa: "Malbec",
     origen: "Mendoza",
     precio: 5600,
-    foto: '../assets/granenemigo.jpg',
+    foto: '../assets/granenemigo.png',
     unidades: 0
 },
 {
@@ -275,7 +275,7 @@ let nuestrosVinos = [{
     cepa: "Petit Verdot",
     origen: "Mendoza",
     precio: 1710,
-    foto: '../assets/mara.jpg',
+    foto: '../assets/mara.png',
     unidades: 0
 },
 {
@@ -283,7 +283,7 @@ let nuestrosVinos = [{
     cepa: "Cabernet Sauvignon",
     origen: "Mendoza",
     precio: 2890,
-    foto: '../assets/rutini.jpg',
+    foto: '../assets/rutini.png',
     unidades: 0
 },
 {
@@ -291,7 +291,7 @@ let nuestrosVinos = [{
     cepa: "Malbec",
     origen: "Mendoza",
     precio: 1800,
-    foto: '../assets/cuvelierlosandes.jpg',
+    foto: '../assets/cuvelierlosandes.png',
     unidades: 0
 },
 {
@@ -299,7 +299,7 @@ let nuestrosVinos = [{
     cepa: "Blend",
     origen: "Mendoza",
     precio: 1200,
-    foto: '../assets/clos.jpg',
+    foto: '../assets/clos.png',
     unidades: 0
 },
 {
@@ -307,7 +307,7 @@ let nuestrosVinos = [{
     cepa: "Malbec",
     origen: "La Rioja",
     precio: 750,
-    foto: '../assets/lapuerta.jpg',
+    foto: '../assets/lapuerta.png',
     unidades: 0
 },
 {
@@ -315,7 +315,7 @@ let nuestrosVinos = [{
     cepa: "Pinot Noir",
     origen: "Mendoza",
     precio: 4300,
-    foto: '../assets/barroco.jpg',
+    foto: '../assets/barroco.png',
     unidades: 0
 },
 {
@@ -323,7 +323,7 @@ let nuestrosVinos = [{
     cepa: "Malbec",
     origen: "Mendoza",
     precio: 1350,
-    foto: '../assets/lamascota.jpg',
+    foto: '../assets/lamascota.png',
     unidades: 0
 },
 {
@@ -331,7 +331,7 @@ let nuestrosVinos = [{
     cepa: "Syrah",
     origen: "Mendoza",
     precio: 950,
-    foto: '../assets/animal.jpg',
+    foto: '../assets/animal.png',
     unidades: 0
 },
 {
@@ -339,7 +339,7 @@ let nuestrosVinos = [{
     cepa: "Pinor Noir",
     origen: "Mendoza",
     precio: 1700,
-    foto: '../assets/septima.jpg',
+    foto: '../assets/septima.png',
     unidades: 0
 },
 {
@@ -347,7 +347,7 @@ let nuestrosVinos = [{
     cepa: "Blend",
     origen: "Mendoza",
     precio: 2300,
-    foto: '../assets/mosquita.jpg',
+    foto: '../assets/mosquita.png',
     unidades: 0
 },
 {
@@ -355,7 +355,7 @@ let nuestrosVinos = [{
     cepa: "Malbec",
     origen: "Mendoza",
     precio: 800,
-    foto: '../assets/laluisa.jpg',
+    foto: '../assets/laluisa.png',
     unidades: 0
 },
 {
@@ -363,7 +363,7 @@ let nuestrosVinos = [{
     cepa: "Malbec",
     origen: "Mendoza",
     precio: 925,
-    foto: '../assets/aguijon.jpg',
+    foto: '../assets/aguijon.png',
     unidades: 0
 },
 {
@@ -371,7 +371,7 @@ let nuestrosVinos = [{
     cepa: "Malbec",
     origen: "Mendoza",
     precio: 1350,
-    foto: '../assets/encuentro.jpg',
+    foto: '../assets/encuentro.png',
     unidades: 0
 }]
 
@@ -483,9 +483,6 @@ function quitarFiltros(){
         let unParametro = cadena.concat(i)
         let box = document.getElementById(unParametro);
         box.attr("checked",false);
-
-
-        // box.prop("checked", !box.prop("checked"));
 
     }
 }
@@ -652,65 +649,49 @@ function mostrarCarrito(tuCarrito){
             let tuSubTotal = parseInt(tuPrecio) * parseInt(tuCantidad);
             sumaTotal += tuSubTotal;
             tuCompra.innerHTML += `
-            <div class="row">    
-                <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 tamanio">
-                    <img class=mt-1 src="${tuImagen}" alt="alpiste">
-                </div>
-                <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 ">
-                    <p>${tuNombre}</p>
-                </div>
-                <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 ">
-                    <p>${tuPrecio}</p>
-                </div>
-                <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 ">
-                    <p>${tuCantidad}</p>
-                </div>
-                <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 ">
-                    <p>${tuSubTotal}</p>
-                </div>
-                <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 ">
-                    <button id="botonEliminar${i}" onclick="borrarProducto(${i})"><img src="../assets/trash.svg" height ="50" width="50" /> </button>
-                </div>
-            </div>    
+
+                <div class="row border">    
+                    <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 tamanio">
+                        <img class=mt-1 src="${tuImagen}" alt="alpiste">
+                    </div>
+                    <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 ">
+                        <p><strong>${tuNombre}</strong></p>
+                    </div>
+                    <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 ">
+                        <p><strong>${tuPrecio}</strong></p>
+                    </div>
+                    <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 ">
+                        <p><strong>${tuCantidad}</strong></p>
+                    </div>
+                    <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 ">
+                        <p><strong>${tuSubTotal}</strong></p>
+                    </div>
+                    <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                        <button id="botonEliminar${i}" onclick="borrarProducto(${i})"><img src="../assets/trash.svg" height ="50" width="50" /> </button>
+                    </div>
+                </div>    
+
             `
         }
         tuCompra.innerHTML += `
-        <div class="row justify-content-center">
+        <div class="row justify-content-center border">
             <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 mt-3">
                 <h3>Monto Total $${sumaTotal} <h3>
             </div>
             <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 mt-3">
-                <button class="finalizarCompra" id="finalizarCompra" onclick="finalizarCompra()">Finalizar Compra </button>
+                <button class="btn btn-danger botonesCarrito" id="finalizarCompra" onclick="finalizarCompra()">Finalizar Compra </button>
             </div>
         </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center border">
             <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 mt-3">
-                <button class="vaciarCarrito" id="vaciarCarro" onclick="vaciarCarrito()">Vaciar Carrito </button>
+                <button class="btn btn-danger botonesCarrito" id="vaciarCarro" onclick="vaciarCarrito()">Vaciar Carrito </button>
             </div>
             <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 mt-3">
-                <button class="cerrarCarro" id="cerrarCarro" onclick="cerrarCarro()">Cerrar </button>
+                <button class="btn btn-danger botonesCarrito" id="cerrarCarro" onclick="verCarro()">Cerrar </button>
             </div>
         </div>
         `
-
-
-
-
-    //     tuCompra.innerHTML += `
-    //     <div class="row">
-    //         <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 mt-3">
-    //             <button class="vaciarCarrito" id="vaciarCarro" onclick="vaciarCarrito()">Vaciar Carrito </button>
-    //         </div>
-    //         <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 mt-3">
-    //         <button class="finalizarCompra" id="finalizarCompra" onclick="finalizarCompra()">Finalizar Compra </button>
-    //         </div>
-    //         <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 mt-3">
-    //             <h3>Total ${sumaTotal} <h3>
-    //         </div>
-    //     </div>   
-    //     `
-     }
-
+    }
 }
 
 // Comienzo toqueteo carro final 
@@ -978,6 +959,7 @@ function finalizarCompra(){
 }
 
 function controlarAcceso(){
+    
     if(noValidoAun){
         console.log(noValidoAun)
         let crearControl = document.getElementById("validacionEmergente");
@@ -988,4 +970,10 @@ function controlarAcceso(){
         <button class="boton mayor" onclick="mostrarSitio()">Soy mayor de edad</button>
         `
     }
+}
+
+function suscribir(){
+    limpiar = document.getElementById("suscripcionMail").innerText = " "
+
+    
 }
