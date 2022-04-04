@@ -5,7 +5,6 @@ let listadoClientes = [];
 let usuarioActual = "Invitado"
 let formularioNew = " ";
 let arregloCarrito = (localStorage.getItem('carrito')) ? JSON.parse(localStorage.getItem('carrito')) : [];
-// let productosTotales = (localStorage.getItem('prodencarrito')) ? parseInt(JSON.parse(localStorage.getItem('prodencarrito'))) : 0;
 let productosTotales = 0;
 let arregloComplementario = [];
 let carroActivo = false;
@@ -19,7 +18,6 @@ class Cliente{
         this.clave = clave;
     }
 }
-// actualizarProdCarritos(parseInt(productosEnCarrrito));
 
 listadoClientes = (localStorage.getItem('usuarios')) ? JSON.parse(localStorage.getItem('usuarios')) : [];
 let nuestrosVinos = [{
@@ -459,7 +457,6 @@ function mostrarFiltrados(arregloFiltrado){
         })
     })
     arregloComplementario = arregloFiltrado;
-    console.table(arregloComplementario)
 }
 
 function restarCantidad(posicion){
@@ -478,14 +475,14 @@ function sumarCantidad(posicion){
 
 function quitarFiltros(){
     listarVinos();
-    for(i=0; i<13; i++){
-        const cadena = "check";
-        let unParametro = cadena.concat(i)
-        let box = document.getElementById(unParametro);
-        box.attr("checked",false);
+//     for(i=0; i<13; i++){
+//         const cadena = "check";
+//         let unParametro = cadena.concat(i)
+//         let box = document.getElementById(unParametro);
+//         box.attr("checked",false);
 
-    }
-}
+//     }
+ }
 
 function realizarFiltros(){
     let arregloCepas = [];
@@ -509,7 +506,7 @@ function realizarFiltros(){
             arregloOrigen.push(nuevoFiltro);
         }
     }
-    //En este IF agregar si se seleccionaron todos y mostrar tooodos los vinos
+    //Si se seleccionan todos los filtros o no se selecciona ninguno, se muestran todos.
     if(((arregloCepas.length==0) && (arregloOrigen.length==0)) || ((arregloCepas.length==8) && (arregloOrigen.length==4))){
         listarVinos();
     }else if(arregloCepas.length==0){
@@ -528,7 +525,6 @@ function mostrarVinosPorCepas(arregloCepas){
         for(j=0;j<nuestrosVinos.length;j++){
             if(nuestrosVinos[j].cepa == idCepa){
                 arregloConFiltros.push(nuestrosVinos[j])
-                //armar un arreglo paralelo para los index
             }
         }
     }
@@ -550,7 +546,6 @@ function mostrarVinosPorOrigen(arregloOrigen){
 
 function mostrarVinosPorCepaYOrigen(arregloCepas, arregloOrigen){
     let arregloConFiltros = [];
-    
     for(i=0;i<arregloOrigen.length;i++){
         let idOrigen = arregloOrigen[i];
         for(j=0;j<arregloCepas.length;j++){
@@ -563,7 +558,20 @@ function mostrarVinosPorCepaYOrigen(arregloCepas, arregloOrigen){
         }
     }
     if (arregloConFiltros.length ===0){
-        alert("no hay vinos que mostrar")
+        //alert("no hay vinos que mostrar")
+        Toastify({
+            text: "Disculpe, no tenemos vinos con las caracteristicas especificadas",
+            duration: 2500,
+            newWindow: true,
+            close: true,
+            gravity: "top", 
+            position: "left", 
+            stopOnFocus: true, 
+            style: {
+            background: "linear-gradient(to right, #F98585, #FD0D0D)",
+            },
+            onClick: function(){} // Callback after click
+        }).showToast();
     }else {
         mostrarFiltrados(arregloConFiltros);
     }
@@ -574,8 +582,19 @@ function agregarAlCarrito(index){
     let busqueda = "input".concat(index);
     let cantUnidades = document.getElementById(busqueda).value;
     if(cantUnidades>0){
-        alert('Agregaste ' + nuestrosVinos[index].nombre + ' al carrito')
-        //Volver a 1 el input de cantidad
+        Toastify({
+            text: 'Agregaste ' + nuestrosVinos[index].nombre + ' al carrito',
+            duration: 3000,
+            newWindow: true,
+            close: true,
+            gravity: "top", 
+            position: "left", 
+            stopOnFocus: true, 
+            style: {
+            background: "linear-gradient(to right, #00b09b, #96c93d)",
+            },
+            onClick: function(){} // Callback after click
+        }).showToast();
         sumarAlCarro(nuestrosVinos[index], cantUnidades);
         document.getElementById(busqueda).value =1;
     }
@@ -586,8 +605,19 @@ function agregarAlCarritoBis(index){
     let busqueda = "input".concat(index);
     let cantUnidades = document.getElementById(busqueda).value;
     if(cantUnidades>0){
-        alert('Agregaste ' + arregloComplementario[index].nombre + ' al carrito')
-        //Volver a 1 el input de cantidad
+        Toastify({
+            text: 'Agregaste ' + arregloComplementario[index].nombre + ' al carrito',
+            duration: 3000,
+            newWindow: true,
+            close: true,
+            gravity: "top", 
+            position: "left", 
+            stopOnFocus: true, 
+            style: {
+            background: "linear-gradient(to right, #00b09b, #96c93d)",
+            },
+            onClick: function(){} // Callback after click
+        }).showToast();
         sumarAlCarro(arregloComplementario[index], cantUnidades);
     }
 }
@@ -599,14 +629,12 @@ function sumarAlCarro(objVino, cantidad){
             for(i=0;  i<arregloCarrito.length; i++){
                 //si está en el carrito, actualizamos cantidad
                 if(objVino.nombre == arregloCarrito[i].nombre){
-                    alert("Ya estaba");
                     arregloCarrito[i].unidades = parseInt(arregloCarrito[i].unidades) + parseInt(cantidad);
                     i = arregloCarrito.length; //lo igualo para cortar el for
                 }else if(i === parseInt(arregloCarrito.length-1)){
                     //si no esta en el carrito, lo agregamos
                     objVino.unidades= parseInt(cantidad);
                     arregloCarrito.push(objVino);
-                    alert("vino cargado")
                     i = arregloCarrito.length; //lo igualo para cortar el for
                     }
             }
@@ -614,15 +642,11 @@ function sumarAlCarro(objVino, cantidad){
         }else{
             objVino.unidades= parseInt(cantidad);
             arregloCarrito.push(objVino);
-            alert("primer vino cargado") 
             productosTotales = parseInt(cantidad);
         }
-        colocarNumero = document.getElementById('prodCarrito').innerHTML = productosTotales;
-        console.table(arregloCarrito);    
-        console.log(productosTotales);    
+        colocarNumero = document.getElementById('prodCarrito').innerHTML = productosTotales; 
         localStorage.setItem(usuarioActual, JSON.stringify(arregloCarrito));
 }
-
 
 function mostrarCarrito(tuCarrito){
     let tuCompra = document.getElementById("cuerpoCarrito");
@@ -707,7 +731,19 @@ const fondoSidebar = document.querySelector(".fondoCarro")
 
 function verCarro(){
     if(productosTotales === 0){
-        alert ("No hay vinos en el carrito... es una excelente oportunidad de elegir el primero!")
+        Toastify({
+            text: "No hay vinos en el carrito... es una excelente oportunidad de elegir el primero!",
+            duration: 3000,
+            newWindow: true,
+            close: true,
+            gravity: "top", 
+            position: "left", 
+            stopOnFocus: true, 
+            style: {
+            background: "linear-gradient(to right, #00b09b, #96c93d)",
+            },
+            onClick: function(){} // Callback after click
+        }).showToast();
     }else{
         sidebar.classList.toggle("active");
         mostrarCarrito(arregloCarrito);
@@ -742,35 +778,31 @@ function cargaFormulario(){
    
         let operacion = document.getElementById("login");
         operacion.innerHTML =" "  //Borramos el contenido para no generar duplicados
-    
-    
         operacion.innerHTML += `
-
         <div class="row">
-        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 parte1y3 barricaIzq">
-        
-        </div>
-        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 bg-secondary">
-        <div class="registros">
-            <form id="registro" class="formularioRegistro" action="#">
-                <h5>Registro</h5>
-                <input type="number" id="idDni" placeholder="DNI" name="dni" required>
-                <input type="email" id="idEmail" placeholder="Email" name="email">
-                <input type="text" id="idNombre" placeholder="Nombre" name="nombre">
-                <input type="password" id="idContrasena" placeholder="Contraseña" name="contrasena" required>
-                <input type="password" id="idContrasena2" placeholder=" Confirme Contraseña" name="contrasena" required>
-                <button type="submit" class="btn btn-primary botonCrear">Registrar</button>
-                <button type="button" class="btn btn-primary botonCrear" onclick="cerrarRegistro()">Cancelar</button>
-            </form>
-        </div>
-        </div>
-        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 parte1y3">
+            <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 parte1y3 barricaIzq">
             
-        </div>  
-    </div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 bg-secondary">
+                <div class="registros">
+                    <form id="registro" class="formularioRegistro" action="#">
+                        <h5>Registro</h5>
+                        <input type="number" id="idDni" placeholder="DNI" name="dni" required>
+                        <input type="email" id="idEmail" placeholder="Email" name="email">
+                        <input type="text" id="idNombre" placeholder="Nombre" name="nombre">
+                        <input type="password" id="idContrasena" placeholder="Contraseña" name="contrasena" required>
+                        <input type="password" id="idContrasena2" placeholder=" Confirme Contraseña" name="contrasena" required>
+                        <button type="submit" class="btn btn-primary botonCrear">Registrar</button>
+                        <button type="button" class="btn btn-primary botonCrear" onclick="cerrarRegistro()">Cancelar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 parte1y3">
+                
+            </div>  
+        </div>
         `
         registrarUsuario();   
-    //})
 }
 
 
@@ -790,15 +822,25 @@ function registrarUsuario(){
         let contrasena2 = document.getElementById('idContrasena2').value;
 
         if(contrasena != contrasena2){
-            alert("La contraseña y la confirmación son distintas")
+            Toastify({
+                text: "La contraseña y la validación de contraseña son distintas",
+                duration: 2500,
+                newWindow: true,
+                close: true,
+                gravity: "top", // `top` or `bottom`
+                position: "left", // `left`, `center` or `right`
+                stopOnFocus: true, // Prevents dismissing of toast on hover
+                style: {
+                background: "linear-gradient(to right, #F98585, #FD0D0D)",
+                },
+                onClick: function(){} // Callback after click
+            }).showToast();
         }
         else{
             if(!listadoClientes.some(usuarioEnArray => usuarioEnArray.dni == dni)){
                 const unCliente = new Cliente(dni, nombre, email, contrasena)
                 listadoClientes.push(unCliente)
                 localStorage.setItem('usuarios', JSON.stringify(listadoClientes))
-
-
                 formularioNew.reset();
                 cerrarRegistro();
                 Toastify({
@@ -840,7 +882,6 @@ function inOutCliente(){
         ingreso.innerHTML += `
         <div class="row">
             <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 parte1y3 barricaIzq">
-            
             </div>
             <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 ">
                 <div id="login" class="login">
@@ -856,7 +897,6 @@ function inOutCliente(){
                 </div>    
             </div>
             <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 parte1y3">
-                
             </div>  
         </div>
         `
@@ -867,7 +907,6 @@ function inOutCliente(){
 
 function inOutSesion(){
     if(usuarioActual=="Invitado"){
-        console.log("estas como invitado")
         formularioN = document.getElementById('inicioSesion');
         formularioN.addEventListener('submit', (e) => {
             e.preventDefault();
@@ -879,13 +918,24 @@ function inOutSesion(){
                 formularioN.reset();
                 recuperarCarro(usuarioActual)
                 colocarUsuario = document.getElementById("usuarioLogueado").innerHTML = usuarioActual;
-                console.log("as")
                 cambiarOpcion = document.getElementById("inOut").innerText = 'Salir';
                 localStorage.setItem('usuarioIn',usuarioActual);
                 cerrarRegistro();
             }
             else{
-                alert("Registrate Pa")
+                Toastify({
+                    text: "Usuario no registrado",
+                    duration: 2500,
+                    newWindow: true,
+                    close: true,
+                    gravity: "top", // `top` or `bottom`
+                    position: "left", // `left`, `center` or `right`
+                    stopOnFocus: true, // Prevents dismissing of toast on hover
+                    style: {
+                    background: "linear-gradient(to right, #F98585, #FD0D0D)",
+                    },
+                    onClick: function(){} // Callback after click
+                }).showToast();
             }
         })
     }else{
@@ -917,9 +967,10 @@ function cargarUsuario(){
     usuarioActual = usuarioSalvado
     recuperarCarro(usuarioActual)
     colocarUsuario = document.getElementById("usuarioLogueado").innerHTML = usuarioActual;
+    if(usuarioActual !== "Invitado"){
+        cambiarOpcion = document.getElementById("inOut").innerText = 'Salir';
+    }
 }
-
-document.getElementById("controlAcceso").style.opacity=0.2;
 
 function mostrarSitio(){
     let crearControl = document.getElementById('validacionEmergente');
@@ -929,8 +980,7 @@ function mostrarSitio(){
     document.getElementById("controlAcceso").style.opacity=1;
     document.getElementById("validacionEmergente").style.opacity=0;
     accesoDenegado = document.getElementById("validacionEmergente").innerHTML = " ";
-    noValidoAun = false;
-    console.log(noValidoAun)
+    sessionStorage.setItem('yaingreso', true);
 }
 
 function cerrarSitio(){
@@ -954,26 +1004,38 @@ function regresar(){
 /* Fin toqueteo Validación 18 */
 
 function finalizarCompra(){
-    alert('Gracias por su compra.' + 'Pedido #2645')
+    let pedido = (Math.random() * 1000).toFixed()
+    swal({
+        title: "Compra exitosa!",
+        text: 'Te esperamos en el local. Numero de Pedido:' + pedido,
+        icon: "success",
+    });
     vaciarCarrito();
 }
 
 function controlarAcceso(){
-    
-    if(noValidoAun){
-        console.log(noValidoAun)
-        let crearControl = document.getElementById("validacionEmergente");
-        crearControl.innerHTML =""
-        crearControl.innerHTML += `
-        <p>Bienvenido, debes ser mayor de edad para visitar este sitio web</p>
-        <button class="boton menor" onclick="cerrarSitio()">Tengo menos de 18 años</button>
-        <button class="boton mayor" onclick="mostrarSitio()">Soy mayor de edad</button>
-        `
-    }
+        let cookie = (sessionStorage.getItem('yaingreso')) ? JSON.parse(sessionStorage.getItem('yaingreso')) : false;
+        console.log(cookie)
+        if (!cookie){
+
+            console.log("nunca habia entrado")
+            let crearControl = document.getElementById("validacionEmergente");
+            crearControl.classList.add('emergente');
+            document.getElementById("controlAcceso").style.opacity=0.2;
+            crearControl.innerHTML =""
+            crearControl.innerHTML += `
+            <div class="control18">
+                <p>Bienvenido, debes ser mayor de edad para visitar este sitio web</p>
+                <button class="boton menor" onclick="cerrarSitio()">Tengo menos de 18 años</button>
+                <button class="boton mayor" onclick="mostrarSitio()">Soy mayor de edad</button>
+            </div>    
+            `
+        }
+        else{
+            console.log("ya habia ingresado")
+        }
 }
 
 function suscribir(){
     limpiar = document.getElementById("suscripcionMail").innerText = " "
-
-    
 }

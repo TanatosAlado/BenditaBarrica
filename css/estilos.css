@@ -50,11 +50,9 @@ body,
 }
 
 .body{
-    /*background-image: url('../assets/espacioKilka.jpg');*/ 
     background-color: brown;
     background-repeat: no-repeat;
     background-size: cover;
-    /*background-color: lightslategray;*/
 }
 
 .margenAlto{
@@ -126,6 +124,10 @@ body,
     margin-left: 5px; 
 }
 
+.orden p{
+    color: black;
+}
+
 .orden input{
     pointer-events: none;
 }
@@ -143,7 +145,6 @@ body,
 .titulo{
     color: white;
     text-align: center;
-    /* margin-bottom: 50px; */
 }
 
 .botonMedida{
@@ -559,3 +560,6 @@ body,
     margin-bottom: 10px;
 }
 
+.control18 p{
+    color: black;
+}

@@ -11,6 +11,7 @@
     <title>Bendita Barrica - Inicio</title>
 </head>
 <body id="body" onload="cargarUsuario(), controlarAcceso()" class="body">
+    <!-- Espacio generado para el control de 18 años -->
     <div id="accesoDenegado">
 
     </div>
@@ -24,7 +25,7 @@
                     <div class="navFlex collapse navbar-collapse" id="navbarSupportedContent">
                         <ul id="menu" class="navbar-nav">
                             <li>
-                                <P>Usuario Actual:</P>
+                                <img src="assets/userIn.svg" width="25px" height="25px" alt="tipito">
                             </li>
                             <li> 
                                 <p id="usuarioLogueado">Invitado</p>
@@ -44,10 +45,7 @@
                                 <li class="nav-item navFlex__item3">
                                     <a href="pages/experiencias.html"><strong>Experiencias</strong></a></li>
                                 <li class="nav-item navFlex__item5 figuraCarro">
-    
-                                    <!-- <img class="elCarritoLleno" id="elCarrito" onclick="verCarro()" src="assets/carritoLleno.png"> -->
                                     <span id="prodCarrito" class="cantCarritoInicio">0</span> 
-            
                                 </li> 
                         </ul>
                     </div>
@@ -58,7 +56,8 @@
         <div class="container portada">
             <img src="assets/b3.png" alt="">
         </div>
-    
+        
+        <!-- Espacio generado para formulario de Logueo -->
         <div id="login">
     
         </div>
@@ -68,7 +67,6 @@
                 <h3>Tienda de Vinos</h3>
                 <p><span onclick="ingresoCliente()">Inicia sesion</span> para acceder a beneficios o continua como Invitado</p>
                 <a title="tiendaVinos" href="pages/productos.html"><img src="assets/vinos.jpg" alt="vinos" /></a>
-                <!-- <img src="assets/vinos.jpg" alt=""> -->
             </div>
             <div class="col-sm-6 col-md-6 col-lg-6 experiencias">
                 <h3>Experiencias</h3>
@@ -112,7 +110,7 @@
     <!-- Inicio toqueteo mayor 18-->
 
 
-    <div id="validacionEmergente" class="emergente">
+    <div id="validacionEmergente">
 
     </div>  
 

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/estilos.css">
     <title>Experiencias</title>
 </head>
-<body class="body">
+<body class="body" onload="cargarUsuario()">
     <header>
         <nav id="navBar" class="navbar navbar-expand-md navbar-light navFlex fondoNav">
             <div class="container-fluid">
@@ -20,7 +20,7 @@
                 <div class="navFlex collapse navbar-collapse" id="navbarSupportedContent">
                     <ul id="menu" class="navbar-nav">
                         <li>
-                            <P>Usuario Actual:</P>
+                            <img src="../assets/userIn.svg" width="25px" height="25px" alt="tipito">
                         </li>
                         <li> 
                             <p id="usuarioLogueado">Invitado</p>
@@ -109,17 +109,17 @@
 
         <div class="suscripcion mt-5">
             <div class="row justify-content-center">
-                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 bg-info">
+                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 bg-secondary">
                     <h5>Ingresá tu mail para recibir nuestro NewsLetter</h5>
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div id="suscripcionMail" class="col-sm-6 col-md-6 col-lg-6 col-xl-6 bg-info">
+                <div id="suscripcionMail" class="col-sm-6 col-md-6 col-lg-6 col-xl-6 bg-secondary">
                     <input type="email">
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 bg-info">
+                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 bg-secondary">
                     <button onclick="suscribir()">Suscribeme</button>
                 </div>
             </div>
