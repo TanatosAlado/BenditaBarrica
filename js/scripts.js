@@ -475,13 +475,12 @@ function sumarCantidad(posicion){
 
 function quitarFiltros(){
     listarVinos();
-//     for(i=0; i<13; i++){
-//         const cadena = "check";
-//         let unParametro = cadena.concat(i)
-//         let box = document.getElementById(unParametro);
-//         box.attr("checked",false);
-
-//     }
+    const cadena = "check";
+    for (i=1;i<13;i++){
+        let indice = cadena.concat(i);
+        const $miCheckBox = document.getElementById(indice);
+        $miCheckBox.checked = false;    
+    }
  }
 
 function realizarFiltros(){
@@ -656,11 +655,11 @@ function mostrarCarrito(tuCarrito){
         tuCompra.innerHTML += `
         <div class="row">    
             <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-              <h4> 
+            <h4> 
                 <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
 
         No tiene productos en el carrito
-              <h4>
+            <h4>
             </div>  
         </div>
         `    
@@ -676,7 +675,7 @@ function mostrarCarrito(tuCarrito){
 
                 <div class="row border">    
                     <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 tamanio">
-                        <img class=mt-1 src="${tuImagen}" alt="alpiste">
+                        <img class=mt-1 src="${tuImagen}" alt="noDisponible">
                     </div>
                     <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 ">
                         <p><strong>${tuNombre}</strong></p>
@@ -1037,5 +1036,19 @@ function controlarAcceso(){
 }
 
 function suscribir(){
-    limpiar = document.getElementById("suscripcionMail").innerText = " "
+    Toastify({
+        text: "Gracias por suscribirte. Te mantendremos informado",
+        duration: 2500,
+        newWindow: true,
+        close: true,
+        gravity: "top", // `top` or `bottom`
+        position: "left", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+        background: "linear-gradient(to right, #00b09b, #96c93d)",
+        },
+        onClick: function(){} // Callback after click
+    }).showToast();
+    
+    limpiar = document.getElementById("idEmail2").value = " "
 }

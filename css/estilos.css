@@ -9,56 +9,7 @@ body,
         overflow-x: hidden;
     }
 
-.eleccion{ 
-    width: 40%;
-    margin-left: 30%;
-    margin-bottom: 50px;
-    background-color: rgb(118, 135, 152,0.5);
-    color: white;
-}
-
-.eleccion p{
-    font-size: 2rem;
-    text-align: center;
-    color: white;
-}
-
-.eleccion button{
-    width: 40%;
-    margin-left: 5%;
-}
-
-.tamano{
-    width: 80%;
-} 
-
-.fila{
-    display: flex;
-    flex-direction: row;
-}
-
-.botonCrear{
-    width: 50%;
-    margin-top: 5px;
-}
-
-.alinear{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    color: white;
-}
-
-.body{
-    background-color: brown;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.margenAlto{
-    background-color: lightgray;
-}
-
+/* Inicio clases navBar */
 .navFlex {
     display: flex;
     flex-direction: row;
@@ -91,236 +42,33 @@ body,
     width: 100%;
 }
 
-.vinos img{
-    width: 90%;
-    margin-left: 5%;
+.cantCarritoInicio{
+    opacity: 0;
 }
 
-.experiencias img{
-    width: 90%;
-    margin-left: 5%;
+#menu>li>ul{
+    display: none;
 }
-
-.tamano{
-    width: 120px;
-    height: 300px;
+#menu>li:hover>ul {
+    display:block;
 }
+/* Fin clases navBar */
 
-.tamano img{
-    width: 100%;
-    height: 100%;
-}
-
-.tamano2{
-    width: 200px;
-    height: 300px;
-    text-align: center;
-}
-
-.orden{
-    display: flex;
-    flex-direction:row;
-    margin-bottom: 5px;
-    margin-left: 5px; 
-}
-
-.orden p{
-    color: black;
-}
-
-.orden input{
-    pointer-events: none;
-}
-
-.ordenyprogreso{
-    position: relative;
-    display: inline-block; 
-    justify-content: center;
-} 
-
-.bodyProductos{
+/* Inicio clases compartidas */
+.body{
     background-color: brown;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.titulo{
-    color: white;
-    text-align: center;
-}
-
-.botonMedida{
-    width: 25px;
-    height: auto;
-    margin-bottom: 15px;
-    text-align: center;
-}
-
-.filtro{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-}
-
-.filtro p{
-    text-align: center;
-}
-
-.arana{
-    display: flex;
-    flex-direction: row;
-}
-
-.items li{
-    list-style: none;
-    padding: 0px;
-}
-
-.item ul{
-    padding: 0px;
-}
-
-.item label{
-    padding: 0px;
-}
-
-.cepas{
-    background-color: burlywood;
-}
-
-.origenes{
-    background-color: burlywood;
-}
-
-.portada img{
-    width: 80%;
-    margin-left: 10%;
-    margin-bottom: 50px;
-}
-
-.estiloTienda h3, p{
-    text-align: center;
-}
-
-.estiloTienda{
-    align-self: center;
-    margin-left: 5%;
-    color: white;
-}
-
-
-/*Inicio toqueteo carrito*/
-.sidebar{
-    position: absolute;
-    background-color:darkgrey;
-    width: 80%;
-    visibility: hidden;
-    left: 10%;
-    z-index: 1;
-}
-
-.fondocarro{
-    position: absolute;
-    background: red;
-    width: 100%;
-    height: 950px;
-    visibility: hidden;
-    z-index: 2;
-}
-
-.btn-carrito{
-    border: none;
-    background-image: url(../assets/carritoLleno.png);
-    border-radius: 10px;
-    padding: 10px;
-    color: white;
-    font-size: 1.5rem;
-    font-family: 'Hubballi', cursive;
-} 
-
-.btn-carrito img{
-    width: 50px;
-    height: 50px;
-}
-
-.active{
-    visibility: visible;
-}
-
-
-.formatoCarro li{
-    list-style-type: none;
-    display: inline-block;
-}
-
-.formatoCarro ul{
-    justify-content: space-around;
-}
-
-.tamanio img{
-    width: 60px;
-    height: 150px;
-}
-
-.formatoCarro{
-    text-align: center;
-} 
-
-.row{
-    align-items: center;
-    --bs-gutter-x: 0;
-}
-
-.figuraCarro img{
-    width: 50px;
-    height: 50px;
-
-} 
-
-
-.fondoCarro{
-    width: 100%;
-    height: 100%;
-    background-color: aqua;
-    z-index: 1;
-}
-
-.pie-pagina{
-    width: 100%;
-    height: 300px;
-    background-color: lightblue;
-}
-
-/*Fin toqueteo carrito*/
-
-/* Inicio Login */
-
-.botonRegistro{
-    align-content: center;
-}
-
-.formularioLogin{
-    height: 150px;
-    text-align: center;
-    color: white;
+.botonCrear{
+    width: 50%;
+    margin-top: 5px;
 }
 
 .formularioRegistro{
     text-align: center;
     color: white;
-}
-
-
-
-.formularioLogin button, input{
-    width: 60%;
-}
-
-.login{
-    color: white;
-}
-
-.botonRegistro{
-    width: 50%;
-    margin-left: 25%;
 }
 
 .parte1y3{
@@ -335,125 +83,28 @@ body,
     background-position: right;
 }
 
-
-/* Inicio sub item registro*/ 
-#menu>li>ul{
-    display: none;
-  }
-  #menu>li:hover>ul {
-    display:block;
-  }
-
-
-.tipito img{
-    width: 50px;
-    height: 25px;
-}
-/* Fin sub item registro */
-
-.cantCarritoInicio{
-    opacity: 0;
+.botonRegistro{
+    width: 50%;
+    margin-left: 25%;
 }
 
-
-/* Inicio toqueteo mayos 18*/ 
-.apagar{
-    opacity:.1;
-    }
-
-.emergente{
-    width:400px;
-    height:250px;
-    position:fixed;
-    background-color:#FFFAFA;
-    top:50%;
-    left:50%;
-    margin-left:-200px;
-    margin-top:-100px;
-    border:1px solid #000;
-    border-radius:10px;
-    padding:20px;
-    text-align:center;
-    box-shadow: 10px 10px 10px #ccc;
-    z-index: 1;
-    opacity: 1;
-}
-
-.emergente p{
-    font-size:24px;
-}
-
-.boton{
-    font-size:18px;
-    padding:10px;
-    border:1px solid #000;
-    border-radius:5px;
-    display:inline-block;
-    width:150px;
-    margin-top:32px;
-    box-shadow:5px 5px 5px #ccc;
-}
-
-.menor:hover{
-    background-color: red;
-}
-
-.mayor:hover{
-    background-color: green;
-}  
-/* Fin toqueteo mayos 18*/ 
-
-.losvinos{
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: space-around;
-}
-
-.bloqueo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-}
-
-.bloqueo p{
+.formularioLogin{
+    height: 150px;
     text-align: center;
-    font-size: 1.5rem;
-}
-
-.bloqueo img{
-    width: 500px;
-    height: auto;
-}
-
-.bloqueo button{
-    width: 40%;
-    margin-top: 10px;
-}
-
-.alineacion{
-    display: flex;
-    align-items: stretch;
     color: white;
 }
 
-.botonFiltro{
-    width: 20%;
-    margin-left: 40%;
+.formularioLogin button, input{
+    width: 60%;
 }
 
-.tituloFiltro{
+.login{
     color: white;
 }
+/* Fin clases compartidas */
 
-.body{
-    z-index: 2;
-}
 
-.cierre{
-    text-align: right;
-    align-content: flex-end;
-}
+/* Inicio clases footer */
 
 .traslado img:hover {
     animation: shake 0.5s;
@@ -530,11 +181,240 @@ body,
     padding-top: 20px;
 }
 
+.pie-pagina{
+    width: 100%;
+    height: 300px;
+    background-color: lightblue;
+}
+/* Fin clases footer */
+
+/* Inicio clases index.html */
+.vinos img{
+    width: 90%;
+    margin-left: 5%;
+}
+
+.experiencias img{
+    width: 90%;
+    margin-left: 5%;
+}
+
+.estiloTienda h3, p{
+    text-align: center;
+}
+
+.estiloTienda{
+    align-self: center;
+    margin-left: 5%;
+    color: white;
+}
+
+.row{
+    align-items: center;
+    --bs-gutter-x: 0;
+}
+
+.bloqueo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.bloqueo p{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.bloqueo img{
+    width: 500px;
+    height: auto;
+}
+
+.bloqueo button{
+    width: 40%;
+    margin-top: 10px;
+}
+
+.menor:hover{
+    background-color: red;
+}
+
+.mayor:hover{
+    background-color: green;
+}  
+
+.control18 p{
+    color: black;
+}
+
+.emergente{
+    width:400px;
+    height:250px;
+    position:fixed;
+    background-color:#FFFAFA;
+    top:50%;
+    left:50%;
+    margin-left:-200px;
+    margin-top:-100px;
+    border:1px solid #000;
+    border-radius:10px;
+    padding:20px;
+    text-align:center;
+    box-shadow: 10px 10px 10px #ccc;
+    z-index: 1;
+    opacity: 1;
+}
+
+.emergente p{
+    font-size:24px;
+}
+
+/* Fin clases index.html */
+
+
+
+/* Inicio clases productos.html */
+.bodyProductos{
+    background-color: brown;
+}
+
+.titulo{
+    color: white;
+    text-align: center;
+}
+
+.filtro{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.filtro p{
+    text-align: center;
+}
+
+.portada img{
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 50px;
+}
+
+.sidebar{
+    position: absolute;
+    background-color:darkgrey;
+    width: 80%;
+    visibility: hidden;
+    left: 10%;
+    z-index: 1;
+}
+
+.formatoCarro{
+    text-align: center;
+} 
+
+.formatoCarro li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+.formatoCarro ul{
+    justify-content: space-around;
+}
+
+.losvinos{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+
+.alineacion{
+    display: flex;
+    align-items: stretch;
+    color: white;
+}
+
+.botonFiltro{
+    width: 20%;
+    margin-left: 40%;
+}
+
+.tituloFiltro{
+    color: white;
+}
+
+.tamano{
+    width: 120px;
+    height: 300px;
+}
+
+.tamano img{
+    width: 100%;
+    height: 100%;
+}
+
+.tamano2{
+    width: 200px;
+    height: 300px;
+    text-align: center;
+}
+
+.orden{
+    display: flex;
+    flex-direction:row;
+    margin-bottom: 5px;
+    margin-left: 5px; 
+}
+
+.orden p{
+    color: black;
+}
+
+.orden input{
+    pointer-events: none;
+}
+
+.ordenyprogreso{
+    position: relative;
+    display: inline-block; 
+    justify-content: center;
+} 
+
+.botonMedida{
+    width: 25px;
+    height: auto;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.tamanio img{
+    width: 60px;
+    height: 150px;
+}
+
 .botonesCarrito{
     width: 60%;
     margin-bottom: 10px;
 }
 
+.btn-carrito{
+    border: none;
+    background-image: url(../assets/carritoLleno.png);
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Hubballi', cursive;
+} 
+
+.figuraCarro img{
+    width: 50px;
+    height: 50px;
+}  
+
+/* Fin clases productos.html */
+
+/* Inicio clases experiencias.html */
 .maridaje img{
     width: 90%;
     margin-left: 5%;
@@ -559,7 +439,84 @@ body,
     margin-top: 5px;
     margin-bottom: 10px;
 }
+/* Fin clases experiencias.html */
 
-.control18 p{
-    color: black;
+
+/* Inicio clases extras */
+.eleccion{ 
+    width: 40%;
+    margin-left: 30%;
+    margin-bottom: 50px;
+    background-color: rgb(118, 135, 152,0.5);
+    color: white;
 }
+
+.eleccion p{
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+}
+
+.eleccion button{
+    width: 40%;
+    margin-left: 5%;
+}
+
+.fila{
+    display: flex;
+    flex-direction: row;
+}
+
+.alinear{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.margenAlto{
+    background-color: lightgray;
+}
+
+.items li{
+    list-style: none;
+    padding: 0px;
+}
+
+.item ul{
+    padding: 0px;
+}
+
+.item label{
+    padding: 0px;
+}
+
+.active{
+    visibility: visible;
+}
+
+.tipito img{
+    width: 50px;
+    height: 25px;
+}
+
+.boton{
+    font-size:18px;
+    padding:10px;
+    border:1px solid #000;
+    border-radius:5px;
+    display:inline-block;
+    width:150px;
+    margin-top:32px;
+    box-shadow:5px 5px 5px #ccc;
+}
+
+.body{
+    z-index: 2;
+}
+
+.cierre{
+    text-align: right;
+    align-content: flex-end;
+}
+/* Fin clases extras */
